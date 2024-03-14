@@ -42,7 +42,9 @@ def pdf_to_images(url):
 last = dict()
 urllib3.disable_warnings()
 apihelper.SESSION_TIME_TO_LIVE = 400 * 60
-bot = telebot.TeleBot("6602678786:AAHkkn8e5X8i-vs6IzHOJUP2NKK26Hf4WTo")
+print('key')
+bot = telebot.TeleBot(input())
+
 keys = {'sirius': 'https://opi-emit.ru/api/schedule/ob-7350-21', 'vega': 'https://opi-emit.ru/api/schedule/ob-7351-21'}
 
 # Словарь для хранения команд и чатов
